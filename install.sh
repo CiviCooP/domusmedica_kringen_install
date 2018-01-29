@@ -46,6 +46,7 @@ echo '*)   create roles and add permisions\n\n'
 echo '     using a drupal feature'
 
 cp -r $INSTALL_DIR/domusmedica_kringsetup sites/all/modules
+drush en domusmedica_kringsetup -y
 
 
 echo '\n\n'
