@@ -1,6 +1,6 @@
 #!/bin/sh
 echo 'Installing a new Domus Medica Instance'
-echo 'I)    download and enable drupal modules \n\n'
+echo '*)    download and enable drupal modules \n\n'
 
 drush en entity --yes
 drush en entity_token --yes
@@ -40,7 +40,7 @@ drush en civi_bartik -y
 drush vset civicrmtheme_theme_admin civi_bartik
 
 echo '\n\n'
-echo 'II)   create roles and add permisions\n\n'
+echo '*)   create roles and add permisions\n\n'
 
 drush role-create medewerker
 drush role-create lid
@@ -106,7 +106,7 @@ drush role-add-perm 'medewerker' 'view public CiviMail content'
 
 
 echo '\n\n'
-echo 'III)  download and install CiviCRM extensions\n\n'
+echo '*)  download and install CiviCRM extensions\n\n'
 
 #
 # Let op: het download pad wordt hier direct genoteerd. Komt er een nieuwere versie van een extensie
@@ -123,7 +123,7 @@ drush cvapi Extension.download key="uk.co.vedaconsulting.mosaico" url="https://d
 drush cvapi Extension.download key="be.domusmedica.sync" url="https://github.com/CiviCooP/be.domusmedica.sync/archive/master.zip" install="1"
 
 echo '\n\n'
-echo 'IV)   enable and disable CiviCRM Compents\n\n'
+echo '*)   enable and disable CiviCRM Compents\n\n'
 
 
 echo '{"enable_components" :["CiviContribute","CiviMember","CiviMail","CiviReport","CiviEvent"] }' | drush cvapi Setting.create --in=json    
