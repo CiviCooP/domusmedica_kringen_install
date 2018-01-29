@@ -15,10 +15,10 @@ drush en module_filter --yes
 drush en webform --yes
 drush en webform_civicrm --yes
 drush en ctools --yes
-drush en calendar --yes
 drush en date --yes
 drush en date_popup --yes
 drush en date_repeat --yes
+drush en calendar --yes
 drush en imce --yes
 drush en wysiwyg --yes
 drush en imce_wysiwyg --yes
@@ -126,7 +126,7 @@ echo '\n\n'
 echo '*)   enable and disable CiviCRM Compents\n\n'
 
 
-echo '{"enable_components" :["CiviContribute","CiviMember","CiviMail","CiviReport","CiviEvent"] }' | drush cvapi Setting.create --in=json    
+echo '{"enable_components" :["CiviContribute","CiviMember","CiviMail","CiviReport","CiviEvent"] }' | drush cvapi Setting.create --in=json
 #nadat de componenten aangepast zijn moet het menu opnieuw worden aangemaakt
 drush cc civicrm
 
