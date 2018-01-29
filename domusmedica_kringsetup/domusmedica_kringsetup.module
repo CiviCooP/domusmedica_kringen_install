@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the domusmedica_kringsetup feature.
+ */
+
+include_once 'domusmedica_kringsetup.features.inc';
