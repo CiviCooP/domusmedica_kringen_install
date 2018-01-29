@@ -34,6 +34,11 @@ drush en webform_calculator --yes
 drush en webform_layout --yes
 drush en webform_matrix_component --yes
 
+drush en civi_bartik -y
+# onderstaande maakt civi_bartik gelijk het admin thema
+# voor CiviCRM
+drush vset civicrmtheme_theme_admin civi_bartik
+
 echo '\n\n'
 echo 'II)   create roles and add permisions\n\n'
 
