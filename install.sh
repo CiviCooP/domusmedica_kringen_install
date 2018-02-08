@@ -74,5 +74,18 @@ echo '{"enable_components" :["CiviContribute","CiviMember","CiviMail","CiviRepor
 #nadat de componenten aangepast zijn moet het menu opnieuw worden aangemaakt
 drush cc civicrm
 
+# Set CiviBartik as administration theme
+
+drush en civi_bartik -y
+drush vset civicrmtheme_theme_admin civi_bartik
+
+# Set CiviBartik Public as CiviCRM public theme
+
+git clone https://github.com/CiviCooP/civi_bartik_public.git sites/all/themes/civi_bartik_public
+drush en civi_bartik_public –y
+drush vset civicrmtheme_theme_public civi_bartik_public
+
+drush cc all
+
 echo '\n\n'
 echo 'Done'
