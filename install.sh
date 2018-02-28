@@ -117,6 +117,9 @@ git clone https://github.com/CiviCooP/civi_bartik_public.git sites/all/themes/ci
 drush en civi_bartik_public –y
 drush vset civicrmtheme_theme_public civi_bartik_public
 
+# zet auteur en publicatie datum uit voor een webform
+drush vset node_submitted_webform 0
+
 drush cc all
 
 echo '\n\n'
