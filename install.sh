@@ -98,7 +98,10 @@ echo '{   "contact_edit_options": [
                 "14",
                 "16"
             ]}
-'  | drush cvapi Setting.create --in=json                  
+'  | drush cvapi Setting.create --in=json   
+
+#stuur een update aan de betrokkenen bij de aanpassing van een activiteit
+echo ' {"activity_assignee_notification": "1" } ' | drush cvapi Setting.create --in=json               
 
 #nadat de componenten aangepast zijn moet het menu opnieuw worden aangemaakt
 drush cc civicrm
