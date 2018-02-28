@@ -71,6 +71,35 @@ echo '*)   enable and disable CiviCRM Compents\n\n'
 
 
 echo '{"enable_components" :["CiviContribute","CiviMember","CiviMail","CiviReport","CiviEvent"] }' | drush cvapi Setting.create --in=json
+
+# weergave voorkeuren voor het contact
+echo '{ "contact_view_options": [
+                "1",
+                "2",
+                "3",
+                "5",
+                "7",
+                "8",
+                "9",
+                "10"
+            ] }
+' | drush cvapi Setting.create --in=json      
+# velden op het pas contact aan scherm
+echo '{   "contact_edit_options": [
+                "1",
+                "2",
+                "3",
+                "5",
+                "6",
+                "7",
+                "8",
+                "11",
+                "12",
+                "14",
+                "16"
+            ]}
+'  | drush cvapi Setting.create --in=json                  
+
 #nadat de componenten aangepast zijn moet het menu opnieuw worden aangemaakt
 drush cc civicrm
 
