@@ -65,6 +65,7 @@ drush cvapi Extension.download key="org.civicrm.flexmailer" url="https://github.
 drush cvapi Extension.download key="org.civicrm.shoreditch" url="https://github.com/civicrm/org.civicrm.shoreditch/archive/v0.1-alpha10-nonsafecolour.zip" install="1"
 drush cvapi Extension.download key="uk.co.vedaconsulting.mosaico" url="https://download.civicrm.org/extension/uk.co.vedaconsulting.mosaico/latest/uk.co.vedaconsulting.mosaico-latest.zip" install="1"
 drush cvapi Extension.download key="be.domusmedica.sync" url="https://github.com/CiviCooP/be.domusmedica.sync/archive/master.zip" install="1"
+drush cvapi Extension.download key="be.domusmedica.wachtdienstimport" url="https://github.com/CiviCooP/be.domusmedica.wachtdienstimport/archive/master.zip" install="1"
 
 echo '\n\n'
 echo '*)   enable and disable CiviCRM Compents\n\n'
