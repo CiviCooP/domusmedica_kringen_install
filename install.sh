@@ -57,12 +57,12 @@ echo '*)  download and install CiviCRM extensions\n\n'
 # dan moet dit aangepast worden
 #
 drush cvapi Extension.download key="be.domusmedica.kringsetup" url="https://github.com/CiviCooP/be.domusmedica.kringsetup/archive/master.zip" install="1"
-drush cvapi Extension.download key="nz.co.fuzion.csvimport" url="https://github.com/eileenmcnaughton/nz.co.fuzion.csvimport/archive/1.2.zip" install="1"
-drush cvapi Extension.download key="nz.co.fuzion.omnipaymultiprocessor" url="https://github.com/eileenmcnaughton/nz.co.fuzion.omnipaymultiprocessor/archive/2.4.zip" install="1"
-drush cvapi Extension.download key="org.civicoop.emailapi" url="https://github.com/CiviCooP/org.civicoop.emailapi/archive/V1.12.zip" install="1"
+drush cvapi Extension.download key="nz.co.fuzion.csvimport" url="https://github.com/eileenmcnaughton/nz.co.fuzion.csvimport/archive/master.zip" install="1"
+drush cvapi Extension.download key="nz.co.fuzion.omnipaymultiprocessor" url="https://github.com/eileenmcnaughton/nz.co.fuzion.omnipaymultiprocessor/archive/master.zip" install="1"
+drush cvapi Extension.download key="org.civicoop.emailapi" url="https://github.com/CiviCooP/org.civicoop.emailapi/archive/master.zip" install="1"
 drush cvapi Extension.download key="org.civicrm.angularprofiles" install="1"
-drush cvapi Extension.download key="org.civicrm.flexmailer" url="https://github.com/civicrm/org.civicrm.flexmailer/archive/v0.2-alpha5.zip" install="1"
-drush cvapi Extension.download key="org.civicrm.shoreditch" url="https://github.com/civicrm/org.civicrm.shoreditch/archive/v0.1-alpha10-nonsafecolour.zip" install="1"
+drush cvapi Extension.download key="org.civicrm.flexmailer" url="https://github.com/civicrm/org.civicrm.flexmailer/archive/master.zip" install="1"
+drush cvapi Extension.download key="org.civicrm.shoreditch" url="https://github.com/civicrm/org.civicrm.shoreditch/archive/master.zip" install="1"
 drush cvapi Extension.download key="uk.co.vedaconsulting.mosaico" url="https://download.civicrm.org/extension/uk.co.vedaconsulting.mosaico/latest/uk.co.vedaconsulting.mosaico-latest.zip" install="1"
 drush cvapi Extension.download key="be.domusmedica.sync" url="https://github.com/CiviCooP/be.domusmedica.sync/archive/master.zip" install="1"
 drush cvapi Extension.download key="be.domusmedica.wachtdienstimport" url="https://github.com/CiviCooP/be.domusmedica.wachtdienstimport/archive/master.zip" install="1"
